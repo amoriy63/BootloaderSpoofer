@@ -7,6 +7,12 @@ android {
     compileSdk 35
     buildToolsVersion '35.0.0'
 
+    packagingOptions {
+        resources {
+            excludes += "**"
+        }
+    }
+
     defaultConfig {
         applicationId "es.chiteroman.bootloaderspoofer"
         minSdk 26
